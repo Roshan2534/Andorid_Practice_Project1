@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidAssessment1</string>
+    <string name="create_password">Create Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="your_password_should_have_a_minimum_of_8_ncharacters_and_contain_atleast_one_nnumber_one_uppercase_and_one_lower_ncase_letter_you_can_use_special_characters">Your password should have a minimum of 8 \ncharacters and contain atleast one \nnumber, one uppercase and one lower \ncase letter. You can use special characters.</string>
+</resources>

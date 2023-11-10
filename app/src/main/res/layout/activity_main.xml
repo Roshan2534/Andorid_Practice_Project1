@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <!-- Icon 1 -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="346dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/logo_green_flag"
+        app:layout_constraintBottom_toTopOf="@id/summaryTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58000004" />
+
+    <TextView
+        android:id="@+id/summaryTextView"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Green Flag customers can
+            \ncreate an account to access"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@id/icon1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/tick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summaryTextView"/>
+
+    <!-- Text next to Icon 1 -->
+    <TextView
+        android:id="@+id/icon1Text"
+        android:layout_width="260dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Car Health Updates"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/icon1"
+        app:layout_constraintTop_toBottomOf="@id/summaryTextView" />
+
+    <!-- Icon 2 -->
+
+    <!-- Text next to Icon 2 -->
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="40dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/tick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon1"/>
+
+    <TextView
+        android:id="@+id/icon2Text"
+        android:layout_width="260dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Request a resque online"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/icon2"
+        app:layout_constraintTop_toBottomOf="@id/icon1Text" />
+
+    <!-- Icon 3 -->
+    <ImageView
+        android:id="@+id/icon3"
+        android:layout_width="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="40dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/tick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon2"/>
+
+    <!-- Text next to Icon 1 -->
+    <TextView
+        android:id="@+id/icon3Text"
+        android:layout_width="260dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Policy Information"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/icon3"
+        app:layout_constraintTop_toBottomOf="@id/icon2Text" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="298dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="170dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/gradient_button_background"
+        android:text="Create an Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon3Text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
